@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LeChat.Messaging.API.Controllers
 {
-    public class MessagingController : Controller
+    public class MessagingController : ControllerBase
     {
         
     }

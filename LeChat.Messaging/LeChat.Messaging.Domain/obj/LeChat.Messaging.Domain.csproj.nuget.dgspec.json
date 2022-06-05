@@ -1,29 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev\\Dimitris\\LeChatClient\\LeChat.Messaging\\LeChat.Messaging.Domain\\LeChat.Messaging.Domain.csproj": {}
+    "D:\\Dev\\Projects\\LeChatClient\\LeChat.Messaging\\LeChat.Messaging.Domain\\LeChat.Messaging.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Dev\\Dimitris\\LeChatClient\\LeChat.Messaging\\LeChat.Messaging.Domain\\LeChat.Messaging.Domain.csproj": {
+    "D:\\Dev\\Projects\\LeChatClient\\LeChat.Messaging\\LeChat.Messaging.Domain\\LeChat.Messaging.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\Dimitris\\LeChatClient\\LeChat.Messaging\\LeChat.Messaging.Domain\\LeChat.Messaging.Domain.csproj",
+        "projectUniqueName": "D:\\Dev\\Projects\\LeChatClient\\LeChat.Messaging\\LeChat.Messaging.Domain\\LeChat.Messaging.Domain.csproj",
         "projectName": "LeChat.Messaging.Domain",
-        "projectPath": "D:\\Dev\\Dimitris\\LeChatClient\\LeChat.Messaging\\LeChat.Messaging.Domain\\LeChat.Messaging.Domain.csproj",
-        "packagesPath": "C:\\Users\\Stratos\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev\\Dimitris\\LeChatClient\\LeChat.Messaging\\LeChat.Messaging.Domain\\obj\\",
+        "projectPath": "D:\\Dev\\Projects\\LeChatClient\\LeChat.Messaging\\LeChat.Messaging.Domain\\LeChat.Messaging.Domain.csproj",
+        "packagesPath": "C:\\Users\\Dimitris\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\Projects\\LeChatClient\\LeChat.Messaging\\LeChat.Messaging.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Stratos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Dimitris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -40,6 +43,22 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
