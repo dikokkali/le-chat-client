@@ -1,5 +1,9 @@
 .window-container {
-       
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    
 }
 
 .friend-header {
@@ -7,29 +11,31 @@
 }
 
 .message-area {
-    overflow-y: scroll;
-    border-style:solid;
-    border-color: #3e5c5c;
-    border-width: 5px;
+    overflow-y: scroll;    
     height: 80vh; 
     margin-bottom: 10px;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(147, 253, 253);    
+    background-color: rgb(215, 246, 255);
 }
 
 .text-type-area-container {
-    border-style:solid;
-    border-color: #3e5c5c;
-    border-width: 2px;
-    height: 10vh;
 
     display: grid;
-    grid-template-columns: 40fr 1fr;
+    grid-template-columns: 39fr 2fr;
+    align-items: center;
+    
+    height: 10vh;       
 }
 
-.text-type-area {
-
+ .text-type-area {
+    font-family: arial; 
+    resize: none;
 }
+
 
