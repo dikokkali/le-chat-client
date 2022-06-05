@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeChat.Messaging.API", "LeChat.Messaging.API\LeChat.Messaging.API.csproj", "{53E29A7B-E1C4-4797-AC17-38D9DD0A34C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeChat.Messaging.Application", "LeChat.Messaging.Application\LeChat.Messaging.Application.csproj", "{9D875D89-016E-4186-8EFB-7B5AFB162209}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeChat.Messaging.Persistence", "LeChat.Messaging.Persistence\LeChat.Messaging.Persistence.csproj", "{E12E2E5C-6E0C-4559-9C45-AEAB5B41BD42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeChat.Messaging.Domain", "LeChat.Messaging.Domain\LeChat.Messaging.Domain.csproj", "{7F839BA8-D0E2-4916-A82A-A8B35A159582}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53E29A7B-E1C4-4797-AC17-38D9DD0A34C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53E29A7B-E1C4-4797-AC17-38D9DD0A34C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53E29A7B-E1C4-4797-AC17-38D9DD0A34C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53E29A7B-E1C4-4797-AC17-38D9DD0A34C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D875D89-016E-4186-8EFB-7B5AFB162209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D875D89-016E-4186-8EFB-7B5AFB162209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D875D89-016E-4186-8EFB-7B5AFB162209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D875D89-016E-4186-8EFB-7B5AFB162209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E12E2E5C-6E0C-4559-9C45-AEAB5B41BD42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E12E2E5C-6E0C-4559-9C45-AEAB5B41BD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E12E2E5C-6E0C-4559-9C45-AEAB5B41BD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E12E2E5C-6E0C-4559-9C45-AEAB5B41BD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F839BA8-D0E2-4916-A82A-A8B35A159582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F839BA8-D0E2-4916-A82A-A8B35A159582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F839BA8-D0E2-4916-A82A-A8B35A159582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F839BA8-D0E2-4916-A82A-A8B35A159582}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94258D22-ED6A-4CCB-9601-F747E9A09E4A}
+	EndGlobalSection
+EndGlobal

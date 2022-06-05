@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-text-bubble',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./text-bubble.component.scss']
 })
 export class TextBubbleComponent implements OnInit {
+
+  @Input('senderName') name: string;
+  @Input('message') message: string;
 
   constructor() { }
 

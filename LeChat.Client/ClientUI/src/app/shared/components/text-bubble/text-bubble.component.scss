@@ -1,11 +1,18 @@
 .bubble-container {
-    background-color: rgb(180, 215, 245);
-    border-color: rgb(180, 215, 245);
-    border-radius: 10%;
-    border-style: solid;
-    border-width: 2px;
-    margin-bottom: 10px;
+    width: -moz-fit-content;
     width: fit-content;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-bottom:10px;
+    background: #00bfb6;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-family: arial;    
+}
+
+.sender-text {
+    font-family: arial; 
+    font-weight: 300;
+    font-size: 12px;
+    text-align: left;
 }
