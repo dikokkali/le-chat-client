@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LeChat.Messaging.Persistence.Migrations
 {
-    public partial class FirstEntities : Migration
+    public partial class FirstMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -26,11 +26,10 @@ namespace LeChat.Messaging.Persistence.Migrations
                     FirstName = table.Column<string>(type: "text", nullable: false),
                     LastName = table.Column<string>(type: "text", nullable: false),
                     Nickname = table.Column<string>(type: "text", nullable: true)
-
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_UserProfile", x => x.Id);                    
+                    table.PrimaryKey("PK_UserProfile", x => x.Id);                   
                 });
 
             migrationBuilder.CreateTable(
@@ -52,13 +51,13 @@ namespace LeChat.Messaging.Persistence.Migrations
                         column: x => x.ChatSessionId,
                         principalTable: "ChatSession",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                     table.ForeignKey(
                         name: "FK_Message_UserProfile_UserProfileId",
                         column: x => x.UserProfileId,
                         principalTable: "UserProfile",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateIndex(

@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace LeChat.Messaging.Persistence.Migrations
 {
     [DbContext(typeof(ChatClientMessageDbContext))]
-    [Migration("20220817181908_FirstEntities")]
-    partial class FirstEntities
+    [Migration("20220818092352_FirstMigration")]
+    partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
