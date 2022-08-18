@@ -1,0 +1,12 @@
+<div class="window-container">
+
+    <div class="message-area-container">
+        <app-text-bubble *ngFor="let message of displayedMessages" [senderName]="message.senderName" [message]="message.senderMessage"></app-text-bubble>        
+    </div>
+
+    <div class="input-area-container">  
+        <textarea class="text-type-area" matInput placeholder="Ex. Hey, what's up?"></textarea>
+        <button>Send Message</button>
+    </div>
+    
+</div>

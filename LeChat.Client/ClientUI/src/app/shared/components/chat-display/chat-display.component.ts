@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ChatBubbleViewModel } from '../../models/UI/ChatBubbleViewModel';
 
 @Component({
-  selector: 'app-chat-window',
-  templateUrl: './chat-window.component.html',
-  styleUrls: ['./chat-window.component.scss']
+  selector: 'chat-display',
+  templateUrl: './chat-display.component.html',
+  styleUrls: ['./chat-display.component.scss']
 })
-export class ChatWindowComponent implements OnInit {
+export class ChatDisplayComponent implements OnInit {
 
   public typeBoxContent: string;
   public displayedMessages: ChatBubbleViewModel[];  
@@ -18,12 +18,8 @@ export class ChatWindowComponent implements OnInit {
     this.displayedMessages = [
       {
         senderName: "Dimitris",
-        senderMessage: "Hello, how are you mate?"
-      },
-      {
-        senderName: "Dimitris",
-        senderMessage: "Good, you?"
-      }
+        senderMessage: "Mpoumpoukitsa mou mikriii"
+      }      
     ]
   }
 

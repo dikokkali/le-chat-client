@@ -1,0 +1,53 @@
+.window-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;    
+}
+
+.message-area-container {
+    overflow-y: scroll;    
+    height: 80vh; 
+    
+    margin-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+    background-color: #BBE1FA;
+}
+
+.input-area-container {
+
+  display: grid;
+  grid-template-columns: 47fr 3fr;
+  min-height: 100px;
+}
+
+.text-type-area {
+  font-family: arial; 
+  resize: none;
+}
+
+// Scrollbar
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
