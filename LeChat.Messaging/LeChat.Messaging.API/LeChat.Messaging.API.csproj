@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LeChat.Messaging.Application\LeChat.Messaging.Application.csproj" />
     <ProjectReference Include="..\LeChat.Messaging.Persistence\LeChat.Messaging.Persistence.csproj" />
   </ItemGroup>
 

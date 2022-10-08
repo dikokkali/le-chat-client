@@ -13,10 +13,10 @@ namespace LeChat.Messaging.Domain.Entities
         public Guid Id { get; set; }
 
         [ForeignKey("UserProfile")]
-        public Guid UserProfileId { get; set; }
+        public Guid SenderId { get; set; }
 
         [ForeignKey("ChatSession")]
-        public Guid ChatSessionId { get; set; }
+        public Guid SessionId { get; set; }
 
         public string Text { get; set; }
         public DateTime DateSent { get; set; }
