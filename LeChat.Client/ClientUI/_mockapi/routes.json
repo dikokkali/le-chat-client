@@ -1,0 +1,11 @@
+{
+    "/api/v1/users/": "/users",
+    "/api/v1/users/:userId": "/users/:userId",
+    "/api/v1/users/:userId/friends/": "users/:userId/friends",
+
+    "/api/v1/messages": "/messages",
+    "/api/v1/messages/:messageId": "/messages/:messageId",
+
+    "/api/v1/relationship_friends": "/relationship_friends",
+    "/api/v1/relationship_friends/:friendshipId": "/relationship_friends/:friendshipId"
+}

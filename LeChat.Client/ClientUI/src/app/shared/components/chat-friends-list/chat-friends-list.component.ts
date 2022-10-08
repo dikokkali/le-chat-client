@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ChatFriendViewModel } from '../../models/ChatFriendViewModel';
+import { FriendsService } from '../../services/API/friendsService.service';
 
 @Component({
   selector: 'chat-friends-list',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatFriendsListComponent implements OnInit {
 
-  constructor() { }
+  public friendsList$: Observable<ChatFriendViewModel[]>;
+
+  constructor(private friendsService: FriendsService) { }
 
   ngOnInit(): void {
+    this.friendsService.getAllUserFriends();
+    this.friendsList$ = this.friendsService.friendsList$;
   }
 
 }

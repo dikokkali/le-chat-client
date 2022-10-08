@@ -14,13 +14,7 @@ export class ChatDisplayComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
-    this.displayedMessages = [
-      {
-        senderName: "Dimitris",
-        senderMessage: "Mpoumpoukitsa mou mikriii"
-      }      
-    ]
+    
   }
 
   //#region Setup
@@ -39,15 +33,7 @@ export class ChatDisplayComponent implements OnInit {
   //#region Callbacks
 
   onSendButtonPressed(e: any) {
-
-    let newMessage = {} as ChatBubbleViewModel;
-
-    newMessage.senderMessage = this.typeBoxContent;
-    newMessage.senderName = "Dimitris";
-
-    this.displayedMessages.push(newMessage);
-
-    this.clearTextArea();
+ 
   }
 
   //#endregion

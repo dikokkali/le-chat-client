@@ -1,5 +1,9 @@
 <div class="friends-list-container">
-  <mat-action-list>
-      <button mat-list-item > Angeliki Fountouki </button>
-    </mat-action-list>
+  <mat-list role="list">      
+      <mat-list-item role="listitem" *ngFor="let friend of (friendsList$ | async)">
+        <button mat-button class="friend-item-container">
+          {{ friend.firstName + ' ' + friend.lastName  }}   
+        </button>
+      </mat-list-item>
+    </mat-list>
 </div>

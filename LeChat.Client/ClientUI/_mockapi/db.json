@@ -1,0 +1,55 @@
+{
+    "users": [
+        { 
+            "id": "acf28bf0-0b11-461e-801e-30a8726c5775", 
+            "firstName": "Angeliki", 
+            "lastName": "Fountouki"
+        },
+        { 
+            "id": "07a034c8-c2b2-49cc-868c-42f31b638b6d", 
+            "firstName": "Konstantinos", 
+            "lastName": "Samaras"
+        },
+        { 
+            "id": "9d5716a2-f0e7-4878-91c9-b8d4eed061cd", 
+            "firstName": "Kostas", 
+            "lastName": "Varv"
+        },
+        { 
+            "id": "b2fe6606-c6ca-42b2-b0ad-b47b74732363", 
+            "firstName": "Nikos", 
+            "lastName": "Zaxos"
+        }
+    ],
+
+    "users.acf28bf0-0b11-461e-801e-30a8726c5775.friends": [],
+
+    "relationship_friends": [
+        {
+            "id": "2b2b6e64-7f6a-4e80-83cf-de25ae457456", 
+            "requesterId": "07a034c8-c2b2-49cc-868c-42f31b638b6d",
+            "receiverId": "9d5716a2-f0e7-4878-91c9-b8d4eed061cd",
+            "accepted": true
+        }
+    ],
+
+    "messages": [
+        {
+            "id": "aeef78bd-9fc8-461b-961f-c8bec91b83d9",
+            "senderId": "b2fe6606-c6ca-42b2-b0ad-b47b74732363",
+            "sessionId": "dc9a674e-9594-4538-aa26-651206548136",
+            "text": "message",
+            "seen": false,
+            "sentDate": "2022-10-08T12:00:00.000Z",
+            "seenDate": "2022-10-08T12:00:00.000Z"
+        }
+    ],
+
+    "chat_sessions": [
+        {
+            "id": "dc9a674e-9594-4538-aa26-651206548136",    
+            "roomName": "",       
+            "startDate": "2022-10-08T12:00:00.000Z"          
+        }
+    ]
+}
