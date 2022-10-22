@@ -22,7 +22,7 @@ namespace LeChat.Messaging.Domain.Entities
         public DateTime DateSent { get; set; }
         public DateTime? DateSeen { get; set; }
 
-        public virtual UserProfile UserProfile { get; set; }
+        public virtual User User { get; set; }
         public virtual ChatSession ChatSession { get; set; }
     }
 }

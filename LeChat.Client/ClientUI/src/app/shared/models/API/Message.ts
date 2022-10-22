@@ -1,4 +1,4 @@
-export class MessageViewModel {
+export class Message {
     id: string;
     sourceId: string;
     targetId: string;

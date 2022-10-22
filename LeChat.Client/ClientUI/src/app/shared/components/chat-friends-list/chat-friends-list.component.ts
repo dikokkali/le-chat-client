@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ChatFriendViewModel } from '../../models/ChatFriendViewModel';
+import { ChatFriendViewModel } from '../../models/UI/ChatFriendViewModel';
 import { FriendsService } from '../../services/API/friendsService.service';
 
 @Component({

@@ -1,16 +1,20 @@
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
-import { MessageViewModel } from "../../models/API/MessageViewModel";
+import { Message } from "../../models/API/Message";
 
 @Injectable()
 export class MessagingService {  
     
-    sessionMessages$: Observable<MessageViewModel[]>;    
+    sessionMessages$: Observable<Message[]>;    
 
-    _messageGetUrl: string = "";
-    _messagePostUrl: string = "";
+    _messageUrl: string = "";
 
     getChatSessionMessages(sessionId: string) {
+
+        // TODO: Replace mock
+        return [
+
+        ]
     }
 
     postMessage() {

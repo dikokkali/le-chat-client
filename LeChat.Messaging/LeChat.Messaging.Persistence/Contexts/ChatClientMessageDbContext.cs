@@ -8,7 +8,7 @@ namespace LeChat.Messaging.Persistence.Contexts
     public class ChatClientMessageDbContext : DbContext
     {
         public DbSet<Message> Message { get; set; }
-        public DbSet<UserProfile> UserProfile { get; set; }
+        public DbSet<User> User { get; set; }
         public DbSet<ChatSession> ChatSession { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ChatBubbleViewModel } from '../../models/UI/ChatBubbleViewModel';
 
 @Component({
   selector: 'chat-display',
@@ -9,7 +8,7 @@ import { ChatBubbleViewModel } from '../../models/UI/ChatBubbleViewModel';
 export class ChatDisplayComponent implements OnInit {
 
   public typeBoxContent: string;
-  public displayedMessages: ChatBubbleViewModel[];  
+  public displayedMessages: any[];  
 
   constructor() { }
 
@@ -18,11 +17,6 @@ export class ChatDisplayComponent implements OnInit {
   }
 
   //#region Setup
-
-  initializeChatWindow() {
-
-    this.typeBoxContent = "";
-  }
 
   clearTextArea() {
     this.typeBoxContent = "";

@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { BehaviorSubject, Observable, of, shareReplay, tap } from "rxjs";
-import { ChatFriendViewModel } from "../../models/ChatFriendViewModel";
+import { ChatFriendViewModel } from "../../models/UI/ChatFriendViewModel";
 
 @Injectable()
 export class FriendsService {    

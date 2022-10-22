@@ -17,14 +17,14 @@ import {MatSelectModule} from '@angular/material/select';
 
 import { FormsModule } from '@angular/forms';
 import { ChatFriendsListComponent } from './shared/components/chat-friends-list/chat-friends-list.component';
-import { ChatUiComponent } from './pages/chat-ui/chat-ui.component';
+import { ChatMessengerComponent } from './pages/chat-ui/chat-messenger.component';
 import { FriendsService } from './shared/services/API/friendsService.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChatUiComponent,
+    ChatMessengerComponent,
     ChatDisplayComponent,
     TextBubbleComponent,
     ChatFriendsListComponent
