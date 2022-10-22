@@ -1,9 +1,14 @@
+import { User } from "../common/User";
 export class Message {
     id: string;
-    sourceId: string;
-    targetId: string;
+    senderId: string;
+    recipientId: string;
+    sessionId: string;
     text: string;
-    seen: boolean;
-    sentAt: Date;
-    seenAt: Date;
+    sentTimestamp: Date;
+    seenTimestamp?: Date;
+
+    sender: User;
+    recipient: User;
 }
+

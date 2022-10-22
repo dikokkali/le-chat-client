@@ -38,6 +38,12 @@ namespace LeChat.Messaging.API
             });
 
             //services.AddPersistence(Configuration);
+
+            //services.AddEntityFrameworkSqlServer()
+            //    .AddDbContext<ChatClientMessageDbContext>(options =>
+            //    {
+            //        options.UseSqlServer()
+            //    })
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

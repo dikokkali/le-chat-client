@@ -1,8 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace LeChat.Messaging.Domain.Entities
 {
@@ -12,17 +10,21 @@ namespace LeChat.Messaging.Domain.Entities
         [Required]
         public Guid Id { get; set; }
 
-        [ForeignKey("UserProfile")]
+        [ForeignKey("Sender")]
         public Guid SenderId { get; set; }
+
+        [ForeignKey("Recipient")]
+        public Guid RecipientId { get; set; }
 
         [ForeignKey("ChatSession")]
         public Guid SessionId { get; set; }
 
         public string Text { get; set; }
-        public DateTime DateSent { get; set; }
-        public DateTime? DateSeen { get; set; }
+        public DateTime SentTimestamp { get; set; }
+        public DateTime? SeenTimestamp { get; set; }
 
-        public virtual User User { get; set; }
+        public virtual User Sender { get; set; }
+        public virtual User Recipient { get; set; }
         public virtual ChatSession ChatSession { get; set; }
     }
 }

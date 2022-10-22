@@ -10,7 +10,7 @@ namespace LeChat.Messaging.Persistence
         public static void AddPersistence(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ChatClientMessageDbContext>(options =>
-                options.UseNpgsql(
+                options.UseSqlServer(
                     configuration.GetConnectionString("DefaultConnection"),
                     b => b.MigrationsAssembly(typeof(ChatClientMessageDbContext).Assembly.FullName)));
         }
