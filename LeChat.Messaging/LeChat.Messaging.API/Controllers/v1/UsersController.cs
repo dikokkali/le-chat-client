@@ -15,10 +15,10 @@ namespace LeChat.Messaging.API.Controllers
 {
     public class UsersController : ControllerBase
     {
-        private Mapper _mapper;
-        private Mediator _mediator;
+        private IMapper _mapper;
+        private IMediator _mediator;
 
-        public UsersController(Mapper mapper, Mediator mediator)
+        public UsersController(IMapper mapper, IMediator mediator)
         {
             _mapper = mapper;
             _mediator = mediator;
@@ -29,8 +29,14 @@ namespace LeChat.Messaging.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<ActionResult<IEnumerable<UserViewModel>>> GetUsersAsync([FromQuery] UserViewQuery filter, CancellationToken cancellationToken)
-        {   
-            return Ok();
+        {
+            var result = await _mediator.Send(filter, cancellationToken);
+
+            if (result == null)
+            {
+                Response.StatusCode = StatusCodes.Status204NoContent;
+            }
+            return Ok(result);            
         }
 
         [HttpGet]
@@ -49,5 +55,19 @@ namespace LeChat.Messaging.API.Controllers
         {
             return Guid.Empty;
         }
+    }
+
+    public class MessagesController : ControllerBase
+    {
+        private Mapper _mapper;
+        private Mediator _mediator;
+
+        public MessagesController(Mapper mapper, Mediator mediator)
+        {
+            _mapper = mapper;
+            _mediator = mediator;
+        }
+
+       
     }
 }

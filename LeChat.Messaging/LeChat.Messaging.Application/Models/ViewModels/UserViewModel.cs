@@ -9,8 +9,8 @@ namespace LeChat.Messaging.Application.Models.ViewModels
     {
         public Guid Id { get; set; }
 
-        public string FirstName;
-        public string LastName;
-        public string? Nickname;
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string? Nickname { get; set; }
     }
 }

@@ -1,5 +1,5 @@
 import { User } from "../common/User";
-export class Message {
+export interface Message {
     id: string;
     senderId: string;
     recipientId: string;

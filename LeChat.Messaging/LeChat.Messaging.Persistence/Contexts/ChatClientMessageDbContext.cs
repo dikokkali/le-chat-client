@@ -1,14 +1,19 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using LeChat.Messaging.Domain.Entities;
-
+using LeChat.Messaging.Application.Interfaces;
 
 namespace LeChat.Messaging.Persistence.Contexts
 {
-    public class ChatClientMessageDbContext : DbContext
+    public class ChatClientMessageDbContext : DbContext, IChatClientMessageDbContext
     {
         public DbSet<Message> Message { get; set; }
         public DbSet<User> User { get; set; }
         public DbSet<ChatSession> ChatSession { get; set; }
+
+        public ChatClientMessageDbContext(DbContextOptions<ChatClientMessageDbContext> options) : base(options)
+        {
+           
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

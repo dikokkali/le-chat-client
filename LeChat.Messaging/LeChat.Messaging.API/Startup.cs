@@ -1,20 +1,13 @@
-using LeChat.Messaging.Persistence;
-using LeChat.Messaging.Persistence.Contexts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Npgsql;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Reflection;
+using MediatR;
+using LeChat.Messaging.Persistence;
+using LeChat.Messaging.Application;
 
 namespace LeChat.Messaging.API
 {
@@ -37,13 +30,8 @@ namespace LeChat.Messaging.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "LeChat.Messaging.API", Version = "v1" });
             });
 
-            //services.AddPersistence(Configuration);
-
-            //services.AddEntityFrameworkSqlServer()
-            //    .AddDbContext<ChatClientMessageDbContext>(options =>
-            //    {
-            //        options.UseSqlServer()
-            //    })
+            services.AddApplication();
+            services.AddPersistence(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

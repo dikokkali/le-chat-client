@@ -10,7 +10,7 @@ namespace LeChat.Messaging.Domain.Entities
         [Required]
         public Guid Id { get; set; }
 
-        public virtual ICollection<User> SessionParticipantsList { get; set; }
+       // public virtual ICollection<User> SessionParticipantsList { get; set; }
         public virtual ICollection<Message> SessionMessageList { get; set; }
     }
 }

@@ -1,5 +1,4 @@
 import { Injectable } from "@angular/core";
-import { User } from "../../models/common/User";
 
 @Injectable({
     providedIn: 'root'
@@ -7,15 +6,15 @@ import { User } from "../../models/common/User";
 export class UserService {
     constructor() {}
 
-    public setCurrentUser(user: User): void {
-        localStorage.setItem('user', JSON.stringify(user));
+    public setCurrentUser(userObject: any) {
+        localStorage.setItem('user', JSON.stringify(userObject));
     }
 
-    public getCurrentUser(): User | null {
+    public getCurrentUser() {
         const userItem = localStorage.getItem('user');
 
         if (userItem)
-            return JSON.parse(localStorage.getItem('user')!) as User;
+            return JSON.parse(localStorage.getItem('user')!);
         else {
             console.error('Request for null user from UserService');
             return null;
