@@ -9,6 +9,7 @@ namespace LeChat.Messaging.Persistence.Contexts
         public DbSet<Message> Message { get; set; }
         public DbSet<User> User { get; set; }
         public DbSet<ChatSession> ChatSession { get; set; }
+        public DbSet<Relationship_Friendship> Relationship_Friendship { get; set; }
 
         public ChatClientMessageDbContext(DbContextOptions<ChatClientMessageDbContext> options) : base(options)
         {

@@ -56,18 +56,4 @@ namespace LeChat.Messaging.API.Controllers
             return Guid.Empty;
         }
     }
-
-    public class MessagesController : ControllerBase
-    {
-        private Mapper _mapper;
-        private Mediator _mediator;
-
-        public MessagesController(Mapper mapper, Mediator mediator)
-        {
-            _mapper = mapper;
-            _mediator = mediator;
-        }
-
-       
-    }
 }
